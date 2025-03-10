@@ -45,7 +45,7 @@ public class RequestController
         String url = endpoint + "?count=" + uniqueIds.size();
         try
         {
-            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class); // Can be a post request with a request body.
             logger.info("HTTP GET request to {} responded with status: {}", url, response.getStatusCode());
         }
         catch (Exception e)
@@ -58,7 +58,7 @@ public class RequestController
     public void logUniqueRequestCount()
     {
         int count = uniqueIds.size();
-        logger.info("Unique requests in the last minute: {}", count);
+        logger.info("Unique requests in the last minute: {}", count); //Can be sent as Kafka message
         uniqueIds.clear();
     }
 }
