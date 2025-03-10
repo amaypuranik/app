@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.verve</groupId>
-	<artifactId>app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>verve-app</artifactId>
+	<version>0.0.1</version>
 	<name>app</name>
 	<description>Verve Application</description>
 	<url/>
